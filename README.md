@@ -27,7 +27,6 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
   - [ ] Finalize forms and add a submit button
   - [ ] Use responsive design with Media Queries
   - [ ] Go further
-  - [ ] 
 
 ## Introduction to HTML
 
@@ -43,7 +42,6 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
     </body>
 </html>
 ```
-
 
 ## Intruduction to CSS
 
