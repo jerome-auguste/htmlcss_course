@@ -6,7 +6,7 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
 
 - [ ] Introduction to HTML
   - [x] My first HTML webpage
-  - [ ] Text structure
+  - [x] Text structure
   - [ ] Hyperlinks
   - [ ] Insert pictures
 - [ ] Introduction to CSS
@@ -33,13 +33,33 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
 ```html
 <!DOCTYPE html>
 <html lang="fr"> <!-- Webpage language -->
-    <head>
-        <meta charset="utf-8"> <!-- Page encoding -->
-        <title>Page title</title> <!-- Shown on your browser tab -->
-    </head>
-    <body>
-        <!-- Insert the content here  -->
-    </body>
+
+<head>
+    <meta charset="utf-8"> <!-- Page encoding -->
+    <title>Page title</title> <!-- Shown on your browser tab -->
+</head>
+
+<body>
+    <!-- Insert the content here  -->
+    <h1>Level 1 Header</h1>
+    <h2>Level 2 Header</h2>
+    <h3>Level 3 Header</h3>
+    <!-- Until <h6> -->
+    <!-- Good practice: never skip a level h1 -> h2 -> h3...-->
+    <p>Paragraph content, <br>with mutliple lines</p> <!-- Good practice: only one <br> and choose the size of the line break in CSS -->
+    <ul> <!-- Unordered list -->
+      <li>1st list item</li>
+      <li>2nd list item</li>
+    </ul>
+    <ol> <!-- Ordered list -->
+      <li>1st list item</li>
+      <li>2nd list item</li>
+    </ol>
+    <mark>Highlighted text</mark> <!-- Good practice: use CSS for custom mark behaviour -->
+    <em>Italic text</em> <!-- Good practice: use CSS for custom em behaviour -->
+    <strong>Bold text</strong> <!-- Good practice: use CSS for custom strong behaviour -->
+</body>
+
 </html>
 ```
 
