@@ -6,7 +6,7 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
 
 - [ ] Introduction to HTML
   - [x] My first HTML webpage
-  - [ ] Text structure
+  - [x] Text structure
   - [ ] Hyperlinks
   - [ ] Insert pictures
 - [ ] Introduction to CSS
