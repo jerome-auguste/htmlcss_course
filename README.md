@@ -4,13 +4,13 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
 
 ## Structure of the course
 
-- [ ] Introduction to HTML
+- [x] Introduction to HTML
   - [x] My first HTML webpage
   - [x] Text structure
   - [x] Hyperlinks
   - [x] Insert pictures
 - [ ] Introduction to CSS
-  - [ ] Include CSS in the HTML page
+  - [x] Include CSS in the HTML page
   - [ ] Change text style
   - [ ] Add a background color
   - [ ] Add some borders and shadows
@@ -61,7 +61,7 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
     <a href="link_to_content">Displayed text to click on</a> <!-- Link can be URL, relative path to other file (HTML file will be displayed, other file extensions will be downloaded), anchor using "#my_anchor" which you can combine with a link to another HTML file "relative/path/to/page.html#anchor_id, <target="_blank"> opens a new tab, "mailto:em@iladdress.com" opens e-mail app -->
     <img src="link_to_picture" alt="Alternative text for accessibility and references" title="Text to display on hover"> <!-- src has the same behaviour as href -->
     <!-- Good practice: use snake case for picture and folder names -->
-    <!-- You can make clickable images putting the img tag inside the <a></a> tags>
+    <!-- You can make clickable images putting the img tag inside the <a></a> tags -->
 
 </body>
 
@@ -69,6 +69,51 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
 ```
 
 ## Intruduction to CSS
+
+```html
+<!DOCTYPE html>
+<html lang="fr"> <!-- Webpage language -->
+
+<head>
+    <meta charset="utf-8"> <!-- Page encoding -->
+    <title>Page title</title> <!-- Shown on your browser tab -->
+    <link href="style.css" rel="stylesheet"> <!-- Link to the CSS file -->
+</head>
+
+<body>
+  <!-- Content of your page -->
+  <p class="my_class_1 my_class_2">
+    Content of your paragraph
+  </p>
+  <p class="my_class_1">
+    Content of your paragraph
+  </p>
+  <div> <!-- Div is a generic container to structure the webpage construction, can be used to group elements -->
+    <p id="my_id">
+      Content of your <span class="special_word">paragraph</span> <!-- Span is a generic inline container, to reach a single element in a list of them (a word in a paragraph for example) -->
+    </p>
+  </div>
+  
+</body>
+</html>
+```
+
+```css
+selector1, selector2 {
+  property_1: value_1;
+  property_2: value_2;
+}
+
+.class { /* Class referenced in HTML code (<p class="my_class">), class has a thiner description of elements and can be applied to multiple elements */
+  property_1: value_1;
+  property_2: value_2;
+}
+
+#id { /* Id referenced in HTML code (<p id="my_id">), id is unique and can only be applied to one element */
+  property_1: value_1;
+  property_2: value_2;
+}
+```
 
 ## Structure your webpage
 
