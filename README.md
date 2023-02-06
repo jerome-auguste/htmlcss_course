@@ -11,7 +11,7 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
   - [x] Insert pictures
 - [ ] Introduction to CSS
   - [x] Include CSS in the HTML page
-  - [ ] Change text style
+  - [x] Change text style
   - [ ] Add a background color
   - [ ] Add some borders and shadows
   - [ ] Use dynamic styles
@@ -100,6 +100,7 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
 
 ```css
 selector1, selector2 {
+  color: red; /* Color can be in hexa, rgb or rgba, rgba is rgb with alpha channel for transparency */
   property_1: value_1;
   property_2: value_2;
 }
@@ -112,6 +113,15 @@ selector1, selector2 {
 #id { /* Id referenced in HTML code (<p id="my_id">), id is unique and can only be applied to one element */
   property_1: value_1;
   property_2: value_2;
+}
+
+text_or_block_selector {
+  font-size: 1em; /* Either in px or em, em is relative size to the parent element and is prefered for responsiveness */
+  font-family: "Arial Black", sans-serif; /* Standard font family (supported by all browsers): Arial Black, Futura, Helvetica, Impact, Trebuchet MS, Verdana. You can import your own font family using Google Fonts or by using local custom fonts */
+  font-style: italic; /* italic or oblique, normal */
+  font-weight: bold; /* bold, normal, thin, 100 - 900, ensure to import all weights and styles of the custom font you are using */
+  text-decoration: underline; /* underline, line-through, overline, none */
+  text-align: center; /* left, right, center, justify, only on block tags <p>, <div>, <h1>... */
 }
 ```
 
