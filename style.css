@@ -2,6 +2,18 @@ body {
     /* Ici on utilise le sélecteur body pour appliquer une police et une taille par défaut pour les éléments */
     font-family: 'Manrope', sans-serif;
     font-size: 1em;
+    background-color: #1F2039;
+}
+
+.header,
+.footer {
+    background-color: white;
+}
+
+.cta {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #8E86B5, #ACAEED);
+    color: white;
 }
 
 h1 {
@@ -10,12 +22,18 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
-p {
+p,
+li {
     font-size: 1.1em;
+    color: #F9F8FF;
+}
+
+h2 {
+    color: #F9F8FF;
 }
 
 a {
-    color: black;
+    color: #242424;
     text-decoration: none;
 }
 
