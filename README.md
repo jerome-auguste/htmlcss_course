@@ -14,7 +14,7 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
   - [x] Change text style
   - [x] Add a background color
   - [x] Add some borders and shadows
-  - [ ] Use dynamic styles
+  - [x] Use dynamic styles
 - [ ] Structure your webpage
   - [ ] Webpage strucure
   - [ ] Discover boxes
@@ -142,6 +142,46 @@ block_selector {
   border-radius: 10px; /* absolute value in px or 0 - 100%, you can also change proporties of each border radius by giving 4 different values, it is possible to create more custom elliptic shapes using complex parameters with "/", you can easilly visualize them using https://9elements.github.io/fancy-border-radius/ */
   box-shadow: 10px 10px 5px rgba(0,0,0,0.75); /* x-offset y-offset blur-radius color, can be multiple visualize shadows at https://shadows.brumm.af/ */
 }
+
+/* Dynamic styling with pseudo-classes */
+selector:state { /* state can be :hover, :active (on click), :focus (selection using tab for instance), :visited */
+  property_1: value_1;
+  property_2: value_2;
+}
+
+/* Sibling selectors */
+selector1 + selector2 { /* Selects the first selector2 that is directly after selector1 */
+  property_1: value_1;
+  property_2: value_2;
+}
+
+* { /* Selects all elements */
+  property_1: value_1;
+  property_2: value_2;
+}
+
+/* Nested selectors */
+selector1 selector2 { /* Selects all selector2 that are nested in selector1 */
+  property_1: value_1;
+  property_2: value_2;
+}
+
+/* Attribute selectors */
+selector[attribute] { /* Selects all selector that have the attribute */
+  property_1: value_1;
+  property_2: value_2;
+}
+
+selector[attribute="value"] { /* Selects all selector that have the attribute with the value */
+  property_1: value_1;
+  property_2: value_2;
+}
+
+selector[attribute*="value"] { /* Selects all selector that have the attribute with the value in it */
+  property_1: value_1;
+  property_2: value_2;
+}
+/* ... Other refined selections are possible, see https://www.w3.org/Style/css3-selectors-updates/WD-css3-selectors-20010126.fr.html#selectors */
 ```
 
 ## Structure your webpage

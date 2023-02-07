@@ -17,6 +17,11 @@ body {
     border-radius: 50px;
 }
 
+.cta:hover {
+    background: linear-gradient(to right, #696484, #8788BA);
+    text-decoration: none;
+}
+
 h1 {
     font-size: 3.5em;
     color: #A5B4FC;
@@ -38,6 +43,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 em {
     color: #A5B4FC;
     font-style: normal;
@@ -46,4 +55,8 @@ em {
 .about-block {
     border-right: 1px solid #A5B4FC;
     border-bottom: 1px solid #A5B4FC;
+}
+
+.link-icon:hover {
+    opacity: 0.5;
 }
