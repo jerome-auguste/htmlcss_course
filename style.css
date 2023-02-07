@@ -14,6 +14,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(to right, #8E86B5, #ACAEED);
     color: white;
+    border-radius: 50px;
 }
 
 h1 {
@@ -40,4 +41,9 @@ a {
 em {
     color: #A5B4FC;
     font-style: normal;
+}
+
+.about-block {
+    border-right: 1px solid #A5B4FC;
+    border-bottom: 1px solid #A5B4FC;
 }
