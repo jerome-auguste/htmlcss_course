@@ -13,7 +13,7 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
   - [x] Include CSS in the HTML page
   - [x] Change text style
   - [x] Add a background color
-  - [ ] Add some borders and shadows
+  - [x] Add some borders and shadows
   - [ ] Use dynamic styles
 - [ ] Structure your webpage
   - [ ] Webpage strucure
@@ -122,6 +122,7 @@ text_or_block_selector {
   font-weight: bold; /* bold, normal, thin, 100 - 900, ensure to import all weights and styles of the custom font you are using */
   text-decoration: underline; /* underline, line-through, overline, none */
   text-align: center; /* left, right, center, justify, only on block tags <p>, <div>, <h1>... */
+  text-shadow: 1px 1px 1px black; /* x-offset y-offset blur-radius color, can be multiple */
 }
 
 block_selector {
@@ -137,6 +138,9 @@ block_selector {
   /* Linear gradient */
   background: linear-gradient(to right, red, blue); /* to top, to bottom, to left, to right, to top left, to top right, to bottom left, to bottom right, angle, x% y%, color1, color2, gradient examples at https://uigradients.com/, build your own gradients at https://cssgradient.io/ */
   opacity: 0.5; /* 0 - 1 */
+  border: 1px solid black; /* thickness style color, style can be solid, dashed, dotted, double, none, you can also change proporties of each border using border-top, border-bottom, border-right, border-left keys */
+  border-radius: 10px; /* absolute value in px or 0 - 100%, you can also change proporties of each border radius by giving 4 different values, it is possible to create more custom elliptic shapes using complex parameters with "/", you can easilly visualize them using https://9elements.github.io/fancy-border-radius/ */
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.75); /* x-offset y-offset blur-radius color, can be multiple visualize shadows at https://shadows.brumm.af/ */
 }
 ```
 
