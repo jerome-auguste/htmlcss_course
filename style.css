@@ -5,8 +5,8 @@ body {
     background-color: #1F2039;
 }
 
-.header,
-.footer {
+header,
+footer {
     background-color: white;
 }
 
