@@ -18,7 +18,7 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
 - [ ] Webpage layouts
   - [x] Structure your webpage
   - [x] Hands on box models
-  - [ ] Hands on Flexbox
+  - [x] Hands on Flexbox
   - [ ] CSS Grids
   - [ ] Other page layout methods
 - [ ] Advanced features
@@ -237,11 +237,20 @@ selector[attribute*="value"] { /* Selects all selector that have the attribute w
 
 ```css
 block_selector {
-  display: block; /* block, inline, inline-block, none */
   width: 100%; /* absolute value in px or % */
   height: 100%; /* absolute value in px or % */
   margin: 10px; /* external spacing with other blocks, absolute value in px or % or auto for horizontal centering, you can also change proporties of each margin by giving 4 different values (top right bottom left) */
   padding: 10px; /* internal spacing with nested content, absolute value in px or %, you can also change proporties of each padding by giving 4 different values */
+  display: flex; /* block, inline, inline-block, flex, grid, none */
+  flex-direction: row; /* row, row-reverse, column, column-reverse, direction of the flexbox */
+  flex-wrap: wrap; /* nowrap, wrap, wrap-reverse, depending on the screen size, some elements might go to a new line or reverse when a new line is created */
+  justify-content: center; /* flex-start, flex-end, center, space-between, space-around, space-evenly, aligns the elements in the flexbox on the principal direction (defined in the flex-direction property) */
+  align-items: center; /* flex-start, flex-end, center, baseline, stretch, aligns the elements in the flexbox on the secondary direction (defined in the flex-direction property) */
+  align-content: center; /* flex-start, flex-end, center, space-between, space-around, stretch, aligns the lines of the flexbox on the secondary direction (defined in the flex-direction property) when flex-warp is enabled (no effect with only 1 line) */
+
+  /* To center a flexbox, you can use the following properties */
+  display: flex;
+  margin: auto;
 }
 ```
 
