@@ -17,7 +17,7 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
   - [x] Use dynamic styles
 - [ ] Webpage layouts
   - [x] Structure your webpage
-  - [ ] Hands on box models
+  - [x] Hands on box models
   - [ ] Hands on Flexbox
   - [ ] CSS Grids
   - [ ] Other page layout methods
@@ -228,6 +228,21 @@ selector[attribute*="value"] { /* Selects all selector that have the attribute w
         <p>Contact information, useful informations, legal terms, privacy policy...</p>
     </footer>
 </body>
+```
+
+```html
+<div></div> <!-- block tag -->
+<span></span> <!-- inline tag -->
+```
+
+```css
+block_selector {
+  display: block; /* block, inline, inline-block, none */
+  width: 100%; /* absolute value in px or % */
+  height: 100%; /* absolute value in px or % */
+  margin: 10px; /* external spacing with other blocks, absolute value in px or % or auto for horizontal centering, you can also change proporties of each margin by giving 4 different values (top right bottom left) */
+  padding: 10px; /* internal spacing with nested content, absolute value in px or %, you can also change proporties of each padding by giving 4 different values */
+}
 ```
 
 ## Advanced features
