@@ -9,17 +9,17 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
   - [x] Text structure
   - [x] Hyperlinks
   - [x] Insert pictures
-- [ ] Introduction to CSS
+- [x] Introduction to CSS
   - [x] Include CSS in the HTML page
   - [x] Change text style
   - [x] Add a background color
   - [x] Add some borders and shadows
   - [x] Use dynamic styles
-- [ ] Structure your webpage
-  - [ ] Webpage strucure
-  - [ ] Discover boxes
-  - [ ] Page layout with Flexbox
-  - [ ] Discover CSS Grids
+- [ ] Webpage layouts
+  - [x] Structure your webpage
+  - [ ] Hands on box models
+  - [ ] Hands on Flexbox
+  - [ ] CSS Grids
   - [ ] Other page layout methods
 - [ ] Advanced features
   - [ ] Add tables
@@ -184,6 +184,50 @@ selector[attribute*="value"] { /* Selects all selector that have the attribute w
 /* ... Other refined selections are possible, see https://www.w3.org/Style/css3-selectors-updates/WD-css3-selectors-20010126.fr.html#selectors */
 ```
 
-## Structure your webpage
+## Webpage layout
+
+```html
+<!DOCTYPE html>
+<html lang="fr"> <!-- Webpage language -->
+
+<head>
+    <meta charset="utf-8"> <!-- Page encoding -->
+    <title>Page title</title> <!-- Shown on your browser tab -->
+    <link href="style.css" rel="stylesheet"> <!-- Link to the CSS file -->
+</head>
+
+<body>
+    <header> <!-- Header of the page, often light and readable with logo, search bar, CTA...  -->
+        <nav> <!-- Navigation bar to switch to different sections or pages -->
+            <ul>
+                <li><a href="link_to_page">Link 1</a></li>
+                <li><a href="link_to_page">Link 2</a></li>
+                <li><a href="link_to_page">Link 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!-- Main content of the page -->
+      <h1>Page title</h1>
+        <section> <!-- Section of the page, structures the main block -->
+          <h2>Section title</h2>
+          <p>Content of your paragraph</p>
+        </section>
+        <section>
+          <article> <!-- Autonomous part of your page, usually structured so it can be copied to another website -->
+            <h2>Article title</h2>
+            <p>Content of your paragraph</p>
+          </article>
+        </section>
+    </main>
+    <aside> <!-- Separated from the main content, can be put aside from the main content for instance, but it can be put anywhere on the page depending on your needs -->
+        <h3>Aside title</h3>
+        <p>Content of your paragraph</p>
+    </aside>
+    
+    <footer> <!-- Footer of the page -->
+        <p>Contact information, useful informations, legal terms, privacy policy...</p>
+    </footer>
+</body>
+```
 
 ## Advanced features
