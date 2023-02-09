@@ -39,13 +39,10 @@ header,
 footer {
     background-color: white;
     padding: 20px 50px;
+    max-height: 45px;
 }
-
-nav .nav-links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    gap: 110px;
+footer div img {
+    max-height: 45px;
 }
 
 .cta {
