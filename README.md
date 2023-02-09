@@ -19,7 +19,7 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
   - [x] Structure your webpage
   - [x] Hands on box models
   - [x] Hands on Flexbox
-  - [ ] CSS Grids
+  - [x] CSS Grids
   - [ ] Other page layout methods
 - [ ] Advanced features
   - [ ] Add tables
@@ -241,6 +241,9 @@ block_selector {
   height: 100%; /* absolute value in px or % */
   margin: 10px; /* external spacing with other blocks, absolute value in px or % or auto for horizontal centering, you can also change proporties of each margin by giving 4 different values (top right bottom left) */
   padding: 10px; /* internal spacing with nested content, absolute value in px or %, you can also change proporties of each padding by giving 4 different values */
+}
+
+container_selector {
   display: flex; /* block, inline, inline-block, flex, grid, none */
   flex-direction: row; /* row, row-reverse, column, column-reverse, direction of the flexbox */
   flex-wrap: wrap; /* nowrap, wrap, wrap-reverse, depending on the screen size, some elements might go to a new line or reverse when a new line is created */
@@ -251,6 +254,18 @@ block_selector {
   /* To center a flexbox, you can use the following properties */
   display: flex;
   margin: auto;
+}
+
+container_selector {
+  display: grid;
+  grid-template-columns: 200px 200px 200px; /* Absolute value in px, em, rem and fr (fraction unit) give the number of columns by giving the width of each column, ensure that each grid cell width is not set otherwise you would have an unexpected result */
+  grid-template-rows: 200px 200px 200px; /* Absolute value in px, give the number of rows by giving the height of each row, ensure that each grid cell height is not set otherwise you would have an unexpected result */
+  gap: 10px; /* Absolute value in px, defines the spacing between the grid cells */
+}
+
+grid_cell_selector {
+  grid-column: 1 / 3; /* Defines the column of the grid cell, equivalent to grid-column-start: 1; grid-column-end: 3; */
+  grid-row: 1 / 3; /* Defines the row of the grid cell, equivalent to grid-row-start: 1; grid-row-end: 3; */
 }
 ```
 
