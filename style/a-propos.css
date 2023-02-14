@@ -1,0 +1,24 @@
+.about-block {
+    border-right: 1px solid #A5B4FC;
+    border-bottom: 1px solid #A5B4FC;
+    padding: 50px;
+    margin-bottom: 80px;
+}
+
+.about-block h2 {
+    margin-top: 30px;
+}
+
+.about-block ul {
+    margin-top: 30px;
+}
+
+.about-block + div {
+    text-align: center;
+}
+
+.a-propos-main {
+    margin: auto;
+    width: 50%
+}
+

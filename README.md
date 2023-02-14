@@ -15,14 +15,14 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
   - [x] Add a background color
   - [x] Add some borders and shadows
   - [x] Use dynamic styles
-- [ ] Webpage layouts
+- [x] Webpage layouts
   - [x] Structure your webpage
   - [x] Hands on box models
   - [x] Hands on Flexbox
   - [x] CSS Grids
   - [x] Other page layout methods
 - [ ] Advanced features
-  - [ ] Add tables
+  - [x] Add tables
   - [ ] Add forms
   - [ ] Finalize forms and add a submit button
   - [ ] Use responsive design with Media Queries
@@ -274,3 +274,78 @@ selector {
 ```
 
 ## Advanced features
+
+```html
+<table>
+  <caption>Table title</caption>
+  <tr>
+    <th>Header row, 1st header cell</th>
+    <th>Header row, 2nd header cell</th>
+    <th>Header row, 3rd header cell</th>
+  <tr>
+    <td>1st row, 1st cell</td>
+    <td>1st row, 2nd cell</td>
+    <td>1st row, 3rd cell</td>
+  </tr>
+  <tr>
+    <td>2nd row, 1st cell</td>
+    <td>2nd row, 2nd cell</td>
+    <td>2nd row, 3rd cell</td>
+  </tr>
+</table>
+
+
+<table> <!-- for bigger tables, put <thead>, <tbody> and <tfoot> tags -->
+  <thead>
+    <tr>
+      <th>Header row, 1st header cell</th>
+      <th>Header row, 2nd header cell</th>
+      <th>Header row, 3rd header cell</th>
+    </tr>
+  </thead>
+  <tfoot> <!-- Good practice: write thead and tfoot before tbody -->
+    <tr>
+      <td>Footer row, 1st cell</td>
+      <td>Footer row, 2nd cell</td>
+      <td>Footer row, 3rd cell</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>1st row, 1st cell</td>
+      <td colspan="2">1st row, 2nd and 3rd cells</td>
+      <!-- Cell at left used colspan to expand to the 3rd column -->
+    </tr>
+    <tr>
+      <td>2nd row, 1st cell</td>
+      <td>2nd row, 2nd cell</td>
+      <td rowspan="2">2nd and 3rd row, 3rd cell</td>
+    </tr>
+    <tr>
+      <td>3rd row, 1st cell</td>
+      <td>3rd row, 2nd cell</td>
+      <!-- Cell above used rowspan to expand to the 3rd row -->
+    </tr>
+    <tr>
+      <td>4th row, 1st cell</td>
+      <td>4th row, 2nd cell</td>
+      <td>4th row, 3rd cell</td>
+    </tr>
+  </tbody>
+```
+
+```css
+table {
+  border-collapse: collapse; /* remove the spacing between the cells, or separate (default) */
+  margin: auto; /* center the table */
+}
+td, th {
+  border: 1px solid black; /* border of the cell */
+  padding: 10px; /* spacing between cell border and content */
+  vertical-align: middle; /* top, bottom, middle, baseline, text-top, text-bottom, align the content vertically */
+}
+
+caption {
+  caption-side: top; /* top (default), bottom, position of the caption */
+}
+```
