@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+}
+
+body {
+    /* Ici on utilise le sélecteur body pour appliquer une police et une taille par défaut pour les éléments */
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: #1F2039;
+}
+
+header,
+footer {
+    background-color: white;
+    padding: 20px 50px;
+}
+
+.cta {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #8E86B5, #ACAEED);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+.cta:hover {
+    background: linear-gradient(to right, #696484, #8788BA);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #A5B4FC;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p,
+li {
+    font-size: 1.1em;
+    color: #F9F8FF;
+}
+
+h2 {
+    color: #F9F8FF;
+}
+
+a {
+    color: #242424;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+em {
+    color: #A5B4FC;
+    font-style: normal;
+}
+
+.link-icon img {
+    max-height: 45px;
+    margin-right: 30px;
+}
+
+.link-icon:hover {
+    opacity: 0.5;
+}
+
+section {
+    padding: 80px;
+}
+
+nav {
+    width: 100%;
+}
+
+footer,
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    margin-right: 30px;
+}

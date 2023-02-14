@@ -1,0 +1,38 @@
+.home-photo-grid {
+    background-color: white;
+    padding: 80px;
+}
+
+.home-photo-grid h2 {
+    color: #242424;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.home-photo-grid div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.home-presentation {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.home-presentation h1 {
+    margin-bottom: 15px;
+}
+
+.home-presentation p {
+    margin-bottom: 30px;
+}
+
+.home-presentation div {
+    padding-right: 80px;
+}
