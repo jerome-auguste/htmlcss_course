@@ -9,22 +9,14 @@ body {
     background-color: #1F2039;
 }
 
-header,
-footer {
-    background-color: white;
-    padding: 20px 50px;
-}
-
-.cta {
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to right, #8E86B5, #ACAEED);
-    color: white;
-    border-radius: 50px;
-}
-
-.cta:hover {
-    background: linear-gradient(to right, #696484, #8788BA);
+a {
+    color: #242424;
     text-decoration: none;
+}
+
+em {
+    color: #A5B4FC;
+    font-style: normal;
 }
 
 h1 {
@@ -33,47 +25,57 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
+h2 {
+    color: #F9F8FF;
+}
+
 p,
 li {
     font-size: 1.1em;
     color: #F9F8FF;
 }
 
-h2 {
-    color: #F9F8FF;
+header,
+footer {
+    background-color: white;
+    padding: 20px 50px;
+    max-height: 45px;
+}
+footer div img {
+    max-height: 45px;
 }
 
-a {
-    color: #242424;
-    text-decoration: none;
+.cta {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #8E86B5, #ACAEED);
+    color: white;
+    border-radius: 50px;
+    padding: 21px 38px;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-em {
-    color: #A5B4FC;
-    font-style: normal;
+.cta:hover {
+    background: linear-gradient(to right, #696484, #8788BA);
+    text-decoration: none;
 }
 
-.about-block {
-    border-right: 1px solid #A5B4FC;
-    border-bottom: 1px solid #A5B4FC;
-    padding: 50px;
-}
-
-.link-icon img {
-    max-height: 45px;
-    margin-right: 30px;
+.link-icon {
+    margin-left: 30px;
 }
 
 .link-icon:hover {
     opacity: 0.5;
 }
 
-section {
-    padding: 80px;
+.about-block {
+    border-right: 1px solid #A5B4FC;
+    border-bottom: 1px solid #A5B4FC;
+    padding: 50px;
+    margin-bottom: 80px;
 }
 
 .about-block h2 {
@@ -84,13 +86,17 @@ section {
     margin-top: 30px;
 }
 
+.about-block + div {
+    text-align: center;
+}
+
+section {
+    padding: 80px;
+}
+
 .a-propos-main {
     margin: auto;
     width: 50%
-}
-
-nav {
-    width: 100%;
 }
 
 footer,
@@ -102,7 +108,7 @@ nav {
 }
 
 nav a {
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .home-photo-grid {
@@ -127,9 +133,21 @@ nav a {
 .home-presentation {
     display: flex;
     flex-direction: row;
-    width: 50%;
-    align-items: center;
+    width: 60%;
+    align-items: flex-start;
     margin: auto;
+}
+
+.home-presentation h1 {
+    margin-bottom: 15px;
+}
+
+.home-presentation p {
+    margin-bottom: 30px;
+}
+
+.home-presentation div {
+    padding-right: 80px;
 }
 
 .portfolio-section-photos {
@@ -162,4 +180,26 @@ nav a {
     height: 100%;
     /* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
     object-fit: cover;
+}
+
+.photo-container-link {
+    position: relative;
+}
+
+.photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    display: none;
+}
+
+.photo-container-link:hover .photo-hover {
+    display: flex;
 }

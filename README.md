@@ -20,7 +20,7 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
   - [x] Hands on box models
   - [x] Hands on Flexbox
   - [x] CSS Grids
-  - [ ] Other page layout methods
+  - [x] Other page layout methods
 - [ ] Advanced features
   - [ ] Add tables
   - [ ] Add forms
@@ -244,7 +244,7 @@ block_selector {
 }
 
 container_selector {
-  display: flex; /* block, inline, inline-block, flex, grid, none */
+  display: flex; /* block (block behaviour), inline (inline behaviour), inline-block, flex (flexblock behaviour), grid (CSS grid behaviour), none (disappear), more values at https://developer.mozilla.org/fr/docs/Web/CSS/display */
   flex-direction: row; /* row, row-reverse, column, column-reverse, direction of the flexbox */
   flex-wrap: wrap; /* nowrap, wrap, wrap-reverse, depending on the screen size, some elements might go to a new line or reverse when a new line is created */
   justify-content: center; /* flex-start, flex-end, center, space-between, space-around, space-evenly, aligns the elements in the flexbox on the principal direction (defined in the flex-direction property) */
@@ -267,6 +267,10 @@ grid_cell_selector {
   grid-column: 1 / 3; /* Defines the column of the grid cell, equivalent to grid-column-start: 1; grid-column-end: 3; */
   grid-row: 1 / 3; /* Defines the row of the grid cell, equivalent to grid-row-start: 1; grid-row-end: 3; */
 }
+
+selector {
+  position: static; /* static (default), relative (use top, bottom, left, right properties to relatively move the element from the default position), absolute (use top, bottom, left, right properties to place the element relatively to the first parent element having a position set), fixed (stays at the same place on the screen), sticky (when reaching top of the screen, sticks to it) or global values: inherit, initial, revert, unset (inherit from parent if set). More details at https://developer.mozilla.org/fr/docs/Web/CSS/position */
+  z-index: 0; /* Order of the overlapping elements (higher value = on top of lower value)
 ```
 
 ## Advanced features
