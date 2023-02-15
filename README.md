@@ -23,8 +23,8 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
   - [x] Other page layout methods
 - [ ] Advanced features
   - [x] Add tables
-  - [ ] Add forms
-  - [ ] Finalize forms and add a submit button
+  - [x] Add forms
+  - [x] Finalize forms and add a submit button
   - [ ] Use responsive design with Media Queries
   - [ ] Go further
 
@@ -332,6 +332,48 @@ selector {
       <td>4th row, 3rd cell</td>
     </tr>
   </tbody>
+</table>
+
+<form method="get" action=""> <!-- method=get, post..., action=url that will treat the information provided in the form -->
+  <fieldset>
+    <legend>Legend of the fieldset</legend>
+    <p>
+      <label for="id_attribute">Label of the input:</label>
+      <input type="text" name="key_sent_to_backend" id="id_attribute" size="30" maxlength="20" value="prefilled value" placeholder="example" autofocus required>
+      <!-- input type can be text, email, url, tel, number, range, date, time, week, month, datetime, datetime-local, search
+      For numbers, we can add parameters for authorized values (min, max, step)
+      autofocus attribute sets the cursor to the field at page loading
+      required makes the field required -->
+    </p>
+  </fieldset>
+  <fieldset>
+    <label for="comment">Your comment:</label>
+    <textarea name="comment" id="comment" rows="5" cols="30" placeholder="example">Default value</textarea>
+  </fieldset>
+  <fieldset>
+    <p>
+      Choose between the following options:<br>
+      <input type="checkbox" name="option_1" id="option_1" checked> <label for="option_1">Option 1</label><br> <!-- checked option checks the checkbox by default -->
+      <input type="checkbox" name="option_2" id="option_2"> <label for="option_2">Option 2</label><br>
+      <input type="checkbox" name="option_3" id="option_3"> <label for="option_3">Option 3</label><br>
+      <!-- "checkbox" let the user choose multiple values, "radio" lets the user only choose one. In case of radio, you will have to group the options using the same name attribute -->
+
+      Choose one of the following options:<br>
+      <input type="radio" name="option_group" id="option_1" checked> <label for="option_1">Option 1</label><br>
+      <input type="radio" name="option_group" id="option_2"> <label for="option_2">Option 2</label><br>
+      <input type="radio" name="option_group" id="option_3"> <label for="option_3">Option 3</label><br>
+
+      <label for="drop_down_menu">Select one option from the drop down menu:</label>
+      <select name="drop_down_menu" id="drop_down_menu">
+        <option value="option_1" selected>Option 1</option>
+        <option value="option_2">Option 2</option>
+        <option value="option_3">Option 3</option>
+      </select>
+    </p>
+  </fieldset>
+  <fieldset>
+    <input type="submit" value="Submit"> <!-- type can be either "submi"t (linked to the action attribute of the form), "reset", "image" to use an image as a submit button (requires a src attribute), "button" with no behaviour by default, generally managed by JavaScript -->
+</form>
 ```
 
 ```css
@@ -348,4 +390,21 @@ td, th {
 caption {
   caption-side: top; /* top (default), bottom, position of the caption */
 }
+
+:required { /* for required fields in forms */
+    property_name: property_value;
+}
+
+:invalid { /* for invalid fields in forms */
+    property_name: property_value;
+}
+
+:focus { /* when the selector ready to be activated (by ressing tab)  */
+    property_name: property_value;
+}
+
+:active { /* when the selector is activated (by pressing enter or clicking on it) */
+    property_name: property_value;
+}
+
 ```
