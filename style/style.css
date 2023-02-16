@@ -42,7 +42,7 @@ li {
 }
 
 h2 {
-    color: #F9F8FF; 
+    color: #F9F8FF;
     font-size: 2em;
     font-weight: lighter;
 }
@@ -94,7 +94,7 @@ nav a {
 }
 
 @media screen and (max-width: 996px) {
-    h1{
+    h1 {
         font-size: 2em;
     }
 

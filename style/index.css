@@ -55,7 +55,8 @@ form {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    flex: 1; /* equivalent to flex: 1 0 100% with values flex-grow flex-shrink flex-basis
+    flex: 1;
+    /* equivalent to flex: 1 0 100% with values flex-grow flex-shrink flex-basis
     flex-grow (occupy space as possible), flex-shrink (shrink if space is smaller), flex-basis (default size) */
 }
 
