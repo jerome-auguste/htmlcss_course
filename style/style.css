@@ -16,7 +16,7 @@ footer {
 }
 
 .cta {
-    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
     background: linear-gradient(to right, #8E86B5, #ACAEED);
     color: white;
     border-radius: 50px;
@@ -30,6 +30,7 @@ footer {
 
 h1 {
     font-size: 3.5em;
+    font-weight: lighter;
     color: #A5B4FC;
     font-family: 'Montserrat', sans-serif;
 }
@@ -42,6 +43,8 @@ li {
 
 h2 {
     color: #F9F8FF;
+    font-size: 2em;
+    font-weight: lighter;
 }
 
 a {
@@ -58,9 +61,12 @@ em {
     font-style: normal;
 }
 
+.link-icon {
+    margin-left: 30px;
+}
+
 .link-icon img {
     max-height: 45px;
-    margin-right: 30px;
 }
 
 .link-icon:hover {
@@ -84,5 +90,34 @@ nav {
 }
 
 nav a {
-    margin-right: 30px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 996px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    header nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav img {
+        margin-bottom: 20px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    header,
+    footer {
+        padding: 20px 20px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
 }

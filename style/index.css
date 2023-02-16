@@ -20,7 +20,7 @@
 .home-presentation {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    max-width: 1000px;
     align-items: flex-start;
     margin: auto;
 }
@@ -56,6 +56,8 @@ form {
     flex-direction: column;
     margin-bottom: 20px;
     flex: 1;
+    /* equivalent to flex: 1 0 100% with values flex-grow flex-shrink flex-basis
+    flex-grow (occupy space as possible), flex-shrink (shrink if space is smaller), flex-basis (default size) */
 }
 
 .form-contact-info {
@@ -79,4 +81,45 @@ input[type="submit"] {
     width: 200px;
     margin: auto;
     margin-top: 30px;
+}
+
+@media screen and (max-width: 996px) {
+    .form-contact-info {
+        flex-direction: column;
+    }
+
+    .home-presentation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-presentation div {
+        padding-right: 0;
+        text-align: center;
+        order: 2;
+    }
+
+    .home-presentation img {
+        order: 1;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .home-photo-grid {
+        padding: 20px;
+    }
+
+    .home-photo-grid div {
+        flex-direction: column;
+    }
+
+    .contact-section {
+        padding: 50px 20px;
+    }
+
+    .form-contact-info {
+        flex-direction: column;
+        gap: 0;
+    }
 }

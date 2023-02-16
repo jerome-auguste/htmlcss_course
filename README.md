@@ -25,7 +25,7 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
   - [x] Add tables
   - [x] Add forms
   - [x] Finalize forms and add a submit button
-  - [ ] Use responsive design with Media Queries
+  - [x] Use responsive design with Media Queries
   - [ ] Go further
 
 ## Introduction to HTML
@@ -245,7 +245,7 @@ block_selector {
 
 container_selector {
   display: flex; /* block (block behaviour), inline (inline behaviour), inline-block, flex (flexblock behaviour), grid (CSS grid behaviour), none (disappear), more values at https://developer.mozilla.org/fr/docs/Web/CSS/display */
-  flex-direction: row; /* row, row-reverse, column, column-reverse, direction of the flexbox */
+  flex-direction: row; /* row, row-reverse, column, column-reverse, principal direction of the flexbox */
   flex-wrap: wrap; /* nowrap, wrap, wrap-reverse, depending on the screen size, some elements might go to a new line or reverse when a new line is created */
   justify-content: center; /* flex-start, flex-end, center, space-between, space-around, space-evenly, aligns the elements in the flexbox on the principal direction (defined in the flex-direction property) */
   align-items: center; /* flex-start, flex-end, center, baseline, stretch, aligns the elements in the flexbox on the secondary direction (defined in the flex-direction property) */
@@ -407,4 +407,30 @@ caption {
     property_name: property_value;
 }
 
+/* Media Query: adapt the design to the screen size and format */
+@media screen and (max-width: 600px) { /* screen is the type of media, max-width is the condition, 600px is the value
+max- and min- are breakpoints (thresholds at which the design changes)
+multiple rules to build media queries: height, width, orientation, media (with spacific values: screen, all, print)
+combined with the following rules: only, and, not */
+  /* CSS properties to apply whenever the user's device falls into the media query conditions */
+  property_name: property_value;
+}
+
+/* Content can be adapted responsively using min- and max- width and height like for example: */
+img {
+  width: 50%; /* default is 50% of parent container */
+  min-width: 200px; /* In case parent container falls below 200px, the image will be 200px wide */
+}
+
+block_selector {
+  overflow: auto; /* Content behaviour when block is too small: visible (default), hidden, scroll, auto (mostly recommended) */
+}
+
+block_containing_text_selector {
+  text-overflow: ellipsis; /* Text behaviour when block is too small: clip (default), ellipsis */
+  white-space: nowrap; /* Uses "..." to show text is longer than the one displayed: nowrap, normal (default), pre, pre-line, pre-wrap */
+}
+```
+
+```html
 ```
