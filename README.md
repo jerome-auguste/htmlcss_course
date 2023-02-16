@@ -431,4 +431,4 @@ block_containing_text_selector {
   white-space: nowrap; /* Uses "..." to show text is longer than the one displayed: nowrap, normal (default), pre, pre-line, pre-wrap */
 }
 ```
-Continue learning web developpment with [JavaScrit for web developpment course](https://openclassrooms.com/fr/courses/7697016-creez-des-pages-web-dynamiques-avec-javascript)
+Continue learning web development with [JavaScrit for web development course](https://openclassrooms.com/fr/courses/7697016-creez-des-pages-web-dynamiques-avec-javascript)
