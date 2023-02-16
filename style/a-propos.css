@@ -50,3 +50,9 @@ h1,
 h2 {
   text-align: center;
 }
+
+@media screen and (max-width: 996px) {
+    .pricing-section {
+        display: none;
+    }
+}
