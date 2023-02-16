@@ -21,12 +21,12 @@ Generic website based on [OpenClassrooms course](https://openclassrooms.com/fr/c
   - [x] Hands on Flexbox
   - [x] CSS Grids
   - [x] Other page layout methods
-- [ ] Advanced features
+- [x] Advanced features
   - [x] Add tables
   - [x] Add forms
   - [x] Finalize forms and add a submit button
   - [x] Use responsive design with Media Queries
-  - [ ] Go further
+  - [x] Explore further
 
 ## Introduction to HTML
 
@@ -431,6 +431,4 @@ block_containing_text_selector {
   white-space: nowrap; /* Uses "..." to show text is longer than the one displayed: nowrap, normal (default), pre, pre-line, pre-wrap */
 }
 ```
-
-```html
-```
+Continue learning web development with [JavaScrit for web development course](https://openclassrooms.com/fr/courses/7697016-creez-des-pages-web-dynamiques-avec-javascript)
